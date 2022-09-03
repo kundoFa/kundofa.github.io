@@ -1,0 +1,177 @@
+*{
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #16213E;
+    padding-top: 50px;
+    
+}
+header{
+    background: #0F3460;
+    padding: 5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+header h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+main{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app{
+    background: #0F3460;
+    width: 90%;
+    min-height: 300px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.view_res{
+    background: #533483;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    overflow-y: auto;
+}
+.view_res p{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    
+}
+.view_res p::selection{background: #E94560;}
+.controls{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.controls form{
+    display: flex;
+    flex-direction: column;
+}
+.controls form .form_radio{
+    margin-top: 15px;
+    align-self: center;
+}
+.controls form .form_radio label:nth-child(2){margin-left: 15px;}
+label{
+    font-size: 18px;
+    font-family: monospace;
+
+}
+label input{
+    background: red;
+    border: none;
+}
+
+
+.controls form button{
+    margin-top: 15px;
+    height: 30px;
+
+    min-width: 130px;
+    align-self: center;
+    border-radius: 15px;
+    border: none;
+    background: #E94560;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: 600;
+    padding: 3px;
+    transition: all .1s;
+}
+.controls form button:active{
+    background: #fff;
+    color: #E94560;
+
+}
+.box_textarea{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+textarea{
+    background: #16213E;
+    color: #fff;
+    padding: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border: none;
+    font-size: 15px;
+    resize: vertical;
+    max-height: 350px;
+}
+textarea::selection{background: #E94560;}
+textarea:focus{
+    outline: none;
+    background: #11192f;
+    border: none;
+}
+footer{
+    background: #E94560;
+    margin-top: 20px;
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+    padding: 10px;
+    display: flex;
+   
+    font-family: sans-serif;
+    justify-self: flex-end; 
+}
+footer div{
+    margin-left: 20px;
+}
+footer div:nth-child(1){
+    border-right: #fff 2px solid;
+    padding-right: 5px;
+}
+
+
+@media (min-width : 750px) {
+
+    .app{
+    
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .controls{
+        width: 40%;
+    }
+    .view_res{
+        width: 50%;
+        height: 300px;
+        align-self: flex-start;
+        margin: 20px;
+        
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        
+    }
+    footer div:nth-child(1){
+        border-right: #fff 2px solid;
+        padding-right: 20px;
+    }
+}
+
+
+
